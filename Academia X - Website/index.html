@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Programación, Desarrollo Web, e Ingeniería de Software.</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <nav id="navbar">
+        <div class="header_wrap">
+            <img src="./assets/img/academia_logo_large.png" alt="logo">
+            
+            <button href="#"  id="btn"><span class="material-symbols-outlined">
+                menu</span></button>
+        </div>
+            <div class="header_content">
+              <div id="listas">
+                <ul>
+                    <li><a href="#" class="link-list">Tienda</a></li>
+                    <li><a href="#" class="link-list">Libros</a></li>
+                    <li><a href="#" class="link-list">Blog</a></li>
+                    <li><a href="#" class="link-list">Acerca De</a></li>
+                    <li><a href="#" class="link-list">Contacto</a></li>
+                    <li><a href="#" class="link-list">Iniciar Sesión</a></li>
+                   </ul>
+              </div>
+            </div>
+        
+    </nav>
+    <script>
+        const boton = document.getElementById('btn');
+        const barraDeNavegacion = document.getElementById('listas');
+        validation = false;
+        boton.addEventListener('click', () => {
+            if(validation == false){
+                barraDeNavegacion.style.removeProperty('display');
+                barraDeNavegacion.style.display = 'block';
+                validation = true;
+            }else {
+                barraDeNavegacion.style.removeProperty('display');
+                barraDeNavegacion.style.display = 'none';
+                validation = false
+            }
+        })
+
+        // const navbar = getElementById('listas');
+        // const toggleButton = getElementById('toggle-button');
+
+        // toggleButton.addEventListener('click', () => {
+        // navbar.classList.toggle('active');
+        // });
+
+    </script>
+</body>
+</html>
